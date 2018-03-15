@@ -1,9 +1,14 @@
 <html>
    <head>
+      <script type="text/javascript">
+         function timedMsg() { var t=setTimeout("alert('5 seconds!')",5000) }
+      </script>
+</head>
        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
        <title>My blog</title>
    </head>
    <body>
-   {{content }}
+      {{ content }}
+      <input type="button" value="Display timed alertbox!" onClick="timedMsg()">
    </body>
 <html>
